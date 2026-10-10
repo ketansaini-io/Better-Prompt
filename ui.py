@@ -21,13 +21,13 @@ if st.button("Enhance"):
         st.caption(f"Technical detail: {e}")
         st.stop()
 
-    st.subheader("Improved prompt")
+    st.subheader("Improved Prompt")
     st.code(result.improved_prompt, language=None)
 
-    st.subheader("Changes made")
+    st.subheader("Changes Made")
     for item in result.changes_made:
         st.write("-", item)
 
-    st.subheader("Needed context")
+    st.subheader("Needed Context")
     for item in result.needed_context:
         st.write("-", item)
